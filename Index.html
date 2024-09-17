@@ -3,9 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Medex</title>
 </head>
 <body>
-    
+   <section class="sm:grid-cols-1 ml-16 mb-4 md:flex flex-row justify-around pt-3 items-center content-center ">
+        <div class="sm:pb-4 flex mb:flex items-center text-blue-600">
+            <img src="./Assets/plus-152614_1280.png" alt="" class="w-16 h-16">
+            <h1 class="text-2xl pl-4 uppercase font-bold">MEDEX</h1>
+        </div>
+        <div class="sm:pb-3 flex mb:flex content-center font-semibold">
+            <i class="fa-solid fa-map pt-3 pr-3 border-solid border-2 items-center p-4 mr-4 border-slate-0 "></i>
+            <h><span class="pr-3 font-semibold capitalize text-blue-600 text-l">Free call</span>09946873456</h2>
+            <p class="text-gray-400">Call Us Now 24/7 Customer Support</p>  
+        </div>
+        <div class="flex content-center ">
+            <i class="fa-brands fa-telegram pt-3 pr-3 border-solid border-2 items-center p-4 mr-4 border-slate-0 "></i>
+            <h><span class="pr-3 font-semibold capitalize text-l">Our Location</span></h2>
+            <p class="text-gray-400">
+                198 West 21th Street, Suite 721 New York NY 10016
+            </p>
+        </div>
+   </section>
+    <!-- component -->
+<nav class="bg-white border border-gray-200 dark:border-gray-700 px-2 sm:px-4 py-2.5 dark:bg-gray-800 shadow">
+    <div class="container flex flex-wrap justify-between items-center mx-auto">
+      <a href="/" class="flex items-center">
+        <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white">
+          MEDIX
+        </span>
+      </a>
+  
+      <div class="flex items-center">
+        <button
+          id="menu-toggle"
+          type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+        >
+          <span class="sr-only">Open main menu</span>
+          <!-- Hamburger icon -->
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+  
+      <div
+        class="w-full md:block md:w-auto hidden"
+        id="mobile-menu"
+      >
+        <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+          <li>
+            <a
+              href="#"
+              class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+              aria-current="page"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            >
+              Services
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            >
+              Doctors
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            >
+              Departments
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+            >
+            Pricing
+            </a>
+          </li>
+        </ul>
+      </div>
+  
+    </div>
+  </nav>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    menuToggle.addEventListener('click', function () {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
 </body>
 </html>
